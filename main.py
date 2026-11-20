@@ -1,4 +1,6 @@
 
+from task_manager import add_task, view_tasks
+
 print("================================")
 print("       PYTHON TASK MANAGER")
 print("================================")
@@ -15,21 +17,17 @@ while True:
 
     if choice == "1":
 
-        task = input("Enter task name: ")
-        tasks.append(task)
+        task = input("Enter task name: ").strip()
 
-        print("Task added successfully!")
+        if task:
+            add_task(tasks, task)
+        else:
+            print("Task name cannot be empty!")
 
     elif choice == "2":
 
         print("\nYour Tasks:")
-
-        if len(tasks) == 0:
-            print("No tasks available")
-
-        else:
-            for task in tasks:
-                print("-", task)
+        view_tasks(tasks)
 
     elif choice == "3":
 

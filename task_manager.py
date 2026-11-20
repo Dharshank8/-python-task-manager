@@ -17,3 +17,6 @@ def delete_task(tasks, task_number):
         print(f"Task '{removed_task}' deleted successfully!")
     else:
         print("Invalid task number!")
+
+def count_tasks(tasks):
+    print(f"Total tasks: {len(tasks)}")

@@ -19,4 +19,4 @@ def delete_task(tasks, task_number):
         print("Invalid task number!")
 
 def count_tasks(tasks):
-    print(f"Total tasks: {len(tasks)}")
+    print(f"You have {len(tasks)} tasks")

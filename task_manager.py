@@ -20,3 +20,8 @@ def delete_task(tasks, task_number):
 
 def count_tasks(tasks):
     print(f"You have {len(tasks)} tasks")
+
+
+def count_completed_tasks(completed_tasks):
+    print(f"You have completed {len(completed_tasks)} tasks")
+

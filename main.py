@@ -1,17 +1,21 @@
 
-from task_manager import add_task, view_tasks
+from task_manager import add_task, view_tasks, count_completed_tasks
 
 print("================================")
 print("       PYTHON TASK MANAGER")
 print("================================")
 
 tasks = []
+completed_tasks = []
 
 while True:
+
+    
 
     print("\n1. Add Task")
     print("2. View Tasks")
     print("3. Exit")
+    print("4. View Completed Task Count")
 
     choice = input("Enter your choice: ")
 
@@ -33,6 +37,8 @@ while True:
 
         print("Exiting application...")
         break
+    elif choice == "4":
+       count_completed_tasks(completed_tasks)
 
     else:
         print("Invalid choice!")
